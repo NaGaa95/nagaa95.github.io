@@ -44,9 +44,10 @@
   }
   const formatDate = date => date ? new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(date)) : 'No release';
   const normalize = str => str.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const latestUpdate = project => [project.updated, project.releaseUpdated, project.assetUpdated, project.released].filter(Boolean).sort().at(-1) || '';
   const sorts = {
     popular: (a, b) => b.stars - a.stars || a.title.localeCompare(b.title),
-    recent: (a, b) => (b.released || '').localeCompare(a.released || '') || a.title.localeCompare(b.title),
+    recent: (a, b) => latestUpdate(b).localeCompare(latestUpdate(a)) || a.title.localeCompare(b.title),
     az: (a, b) => a.title.localeCompare(b.title),
   };
   function syncUrl() {
@@ -135,8 +136,11 @@
     $('recap').replaceChildren(...metrics.map(([value, label, title]) => node('div', { class: 'metric', title }, node('strong', {}, number(value)), node('span', { class: 'metric-label' }, label))));
   }
   function renderRecent() {
-    const latest = projects.filter(p => p.released && !p.archived && !p.experimental).sort(sorts.recent).slice(0, 8);
-    $('recent-grid').replaceChildren(...latest.map(p => node('a', { class: 'recent-card', href: `#project/${encodeURIComponent(p.id)}` }, artwork(p), node('div', { class: 'recent-info' }, node('h3', {}, p.title), node('p', {}, node('span', {}, /^\d/.test(p.version) ? `v${p.version}` : p.version), ' · ' + formatDate(p.released))))));
+    const latest = projects.filter(p => !p.archived && latestUpdate(p)).sort(sorts.recent).slice(0, 8);
+    $('recent-grid').replaceChildren(...latest.map(p => {
+      const version = p.version ? (/^\d/.test(p.version) ? `v${p.version}` : p.version) : 'Source';
+      return node('a', { class: 'recent-card', href: p.directLink ? p.repo : `#project/${encodeURIComponent(p.id)}` }, artwork(p, true), node('div', { class: 'recent-info' }, node('h3', {}, p.title), node('p', { title: `Latest repository or release update: ${formatDate(latestUpdate(p))}` }, node('span', {}, version), ' · ' + formatDate(latestUpdate(p)))));
+    }));
   }
   function showProject(p) {
     if (!dialog.open) returnFocus = document.activeElement;
@@ -148,7 +152,7 @@
     else if (!p.archived && p.releaseUrl) actions.append(node('a', { href: p.downloadUrl || p.releaseUrl, class: 'button primary' }, p.downloadUrl ? `Download ${p.assetName}` : 'View release', icon('download')));
     const guideUrl = p.category === 'native' || p.category === 'recompilations' ? p.releaseUrl || `${p.repo}#readme` : `${p.repo}#readme`;
     actions.append(node('a', { href: guideUrl, class: 'button secondary' }, 'Installation guide', icon('arrow')));
-    actions.append(node('a', { href: p.repo, class: 'button secondary' }, 'Source code', icon('github')));
+    if (!p.hideSource) actions.append(node('a', { href: p.repo, class: 'button secondary' }, 'Source code', icon('github')));
     const credits = node('p', { class: 'dialog-credits' }, `Repository: ${p.repo.replace('https://github.com/', '')}. `);
     if (p.upstream) credits.append('Based on ', node('a', { href: `https://github.com/${p.upstream}` }, p.upstream), '. ');
     credits.append('See the project for full credits and licensing.');

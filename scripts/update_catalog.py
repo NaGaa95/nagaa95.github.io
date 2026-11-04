@@ -46,9 +46,9 @@ def refresh(project):
         if release:
             assets = release['assets']
             asset = next((a for a in assets if a['name'].lower().endswith('.nro')), None) or (assets[0] if len(assets) == 1 else None)
-            project.update(version=release['tag_name'], released=release['published_at'], releaseUrl=release['html_url'], releaseNotes=release.get('body') or '', prerelease=release['prerelease'], downloadUrl=asset['browser_download_url'] if asset else None, assetName=asset['name'] if asset else None, assetSize=asset['size'] if asset else None)
+            project.update(version=release['tag_name'], released=release['published_at'], releaseUpdated=release.get('updated_at') or release['published_at'], assetUpdated=max((a.get('updated_at') or '' for a in assets), default='') or None, releaseUrl=release['html_url'], releaseNotes=release.get('body') or '', prerelease=release['prerelease'], downloadUrl=asset['browser_download_url'] if asset else None, assetName=asset['name'] if asset else None, assetSize=asset['size'] if asset else None)
         else:
-            for field in ('version', 'released', 'releaseUrl', 'downloadUrl', 'assetName', 'assetSize'):
+            for field in ('version', 'released', 'releaseUpdated', 'assetUpdated', 'releaseUrl', 'downloadUrl', 'assetName', 'assetSize'):
                 project[field] = None
             project['releaseNotes'] = ''
             project['prerelease'] = False
