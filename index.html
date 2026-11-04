@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NaGaa95 · Switch ports & homebrew</title>
+  <meta name="description" content="NaGaa95’s Nintendo Switch game ports, emulators, native ports, recompilations, and homebrew tools. Downloads, installation guides, and source code.">
+  <meta name="theme-color" content="#1b1d21">
+  <meta property="og:title" content="NaGaa95 · Switch ports & homebrew">
+  <meta property="og:description" content="Game ports, emulators, and homebrew tools for Nintendo Switch.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nagaa95.github.io/">
+  <meta property="og:image" content="https://nagaa95.github.io/assets/social-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/avatar.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('nagaa-theme')||'dark'}catch{}</script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip" href="#library">Skip to projects</a>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M8 5h11v11M19 5 5 19"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-native" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9z"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-theme" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4v16"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 20c-5 1.5-5-2.5-7-3m14 5v-4a3.5 3.5 0 0 0-1-2.5c3-.4 6-1.5 6-6.5a5 5 0 0 0-1.5-3.5A4.6 4.6 0 0 0 19.4 2S18.2 1.6 15.5 3a13.4 13.4 0 0 0-7 0C5.8 1.6 4.6 2 4.6 2a4.6 4.6 0 0 0-.1 3.5A5 5 0 0 0 3 9c0 5 3 6.1 6 6.5A3.5 3.5 0 0 0 8 18v4"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><path stroke="none" fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6Z"/></symbol>
+    <symbol id="i-discord" viewBox="0 0 24 24"><path stroke="none" fill="currentColor" d="M20.3 4.4a19.8 19.8 0 0 0-4.9-1.5l-.6 1.2a18.4 18.4 0 0 0-5.5 0l-.6-1.2a19.7 19.7 0 0 0-4.9 1.5C.7 9.1-.2 13.7.2 18.2a20 20 0 0 0 6 3l1.2-2a12.8 12.8 0 0 1-1.9-.9l.5-.4a14.2 14.2 0 0 0 12.1 0l.5.4a12.7 12.7 0 0 1-1.9.9l1.2 2a19.9 19.9 0 0 0 6-3c.5-5.2-.9-9.7-3.6-13.8ZM8 15.4c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.1 1.1 2.1 2.4-.9 2.4-2.1 2.4Zm8 0c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.1 1.1 2.1 2.4-.9 2.4-2.1 2.4Z"/></symbol>
+  </defs></svg>
+  <header class="site-header wrap"><h1 class="profile-title"><a class="name" href="./"><img src="assets/avatar.png" alt="" width="36" height="36">NaGaa95</a></h1><div class="recap" id="recap" role="group" aria-label="Project totals" aria-live="polite"></div><nav class="header-links" aria-label="Profile links"><button class="icon-button" id="theme-toggle" aria-label="Switch to light theme" title="Change theme"><svg><use href="#i-theme"/></svg></button><a href="https://github.com/NaGaa95" aria-label="GitHub profile" title="GitHub"><svg aria-hidden="true"><use href="#i-github"/></svg></a><a href="https://www.youtube.com/@naga3030" aria-label="YouTube channel" title="YouTube"><svg aria-hidden="true"><use href="#i-youtube"/></svg></a><a href="https://discord.gg/pBybbdasfQ" aria-label="Discord server" title="Discord"><svg aria-hidden="true"><use href="#i-discord"/></svg></a></nav></header>
+  <main class="wrap">
+    <section class="recent" aria-labelledby="recent-title"><h2 id="recent-title">Latest releases</h2><div class="recent-grid" id="recent-grid"><p class="loading">Loading releases…</p></div></section>
+    <section class="library" id="library" aria-labelledby="library-title">
+      <h2 id="library-title">Projects</h2>
+      <div class="category-tabs" id="categories" role="group" aria-label="Project category"></div>
+      <div class="library-controls"><label class="search"><svg><use href="#i-search"/></svg><span class="sr-only">Search projects</span><input id="search" type="search" placeholder="Search projects…" autocomplete="off" spellcheck="false"><kbd aria-hidden="true">/</kbd></label><label class="sort"><span class="sr-only">Sort projects</span><select id="sort"><option value="popular">Most starred</option><option value="recent">Latest release</option><option value="az">Name: A–Z</option></select></label></div>
+      <div class="results-meta"><p id="result-count" role="status" aria-live="polite">Loading projects…</p></div>
+      <div id="project-groups"><p class="loading">Loading projects…</p></div>
+      <div class="empty-state" id="empty-state" hidden><p>No matching projects.</p><button class="button" id="reset-filters">Reset filters</button></div>
+      <noscript><p class="notice"><a href="https://github.com/NaGaa95?tab=repositories">Browse the projects on GitHub</a>. Enable JavaScript to use the catalogue.</p></noscript>
+    </section>
+  </main>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><button class="icon-button dialog-close" id="close-dialog" aria-label="Close project details"><svg><use href="#i-close"/></svg></button><div id="dialog-content"></div></dialog>
+</body>
+</html>

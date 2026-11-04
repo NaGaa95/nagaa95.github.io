@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nagaa95.github.io/sitemap.xml

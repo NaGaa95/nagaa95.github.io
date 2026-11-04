@@ -1,1 +1,3 @@
-# nagaa95.github.io
+# NaGaa95 · Switch ports & homebrew
+
+A simple static GitHub Pages catalogue.
