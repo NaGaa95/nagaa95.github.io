@@ -44,6 +44,10 @@
   }
   const formatDate = date => date ? new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(date)) : 'No release';
   const normalize = str => str.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const projectVersion = project => {
+    const version = project.displayVersion || project.version;
+    return version ? (/^\d/.test(version) ? `v${version}` : version) : null;
+  };
   const latestUpdate = project => [project.updated, project.releaseUpdated, project.assetUpdated, project.released].filter(Boolean).sort().at(-1) || '';
   const sorts = {
     popular: (a, b) => b.stars - a.stars || a.title.localeCompare(b.title),
@@ -92,7 +96,7 @@
     $('categories').replaceChildren(...buttons);
   }
   function projectCard(p) {
-    const version = p.directLink ? 'Official repository' : p.version ? (/^\d/.test(p.version) ? `v${p.version}` : p.version) : 'Source only';
+    const version = projectVersion(p) || (p.directLink ? 'Official repository' : 'Source only');
     const footer = node('div', { class: 'card-footer' }, node('span', {}, version), node('span', { class: 'card-stars', 'aria-label': `${p.stars} GitHub stars` }, icon('star'), new Intl.NumberFormat('en').format(p.stars)));
     const article = node('article', { class: 'project-card', 'data-project': p.id }, node('a', { href: p.directLink ? p.repo : `#project/${encodeURIComponent(p.id)}`, 'aria-label': `${p.title} — ${p.directLink ? 'official repository' : p.archived ? 'archived project' : p.experimental ? 'experimental project' : 'details and downloads'}` }, artwork(p, true), node('h4', { class: 'card-title' }, p.title), footer));
     if (p.continued) article.append(node('a', { class: 'continued-link', href: p.continued }, 'Continued by Chansey', icon('external')));
@@ -138,13 +142,13 @@
   function renderRecent() {
     const latest = projects.filter(p => !p.archived && latestUpdate(p)).sort(sorts.recent).slice(0, 8);
     $('recent-grid').replaceChildren(...latest.map(p => {
-      const version = p.version ? (/^\d/.test(p.version) ? `v${p.version}` : p.version) : 'Source';
+      const version = projectVersion(p) || 'Source';
       return node('a', { class: 'recent-card', href: p.directLink ? p.repo : `#project/${encodeURIComponent(p.id)}` }, artwork(p, true), node('div', { class: 'recent-info' }, node('h3', {}, p.title), node('p', { title: `Latest repository or release update: ${formatDate(latestUpdate(p))}` }, node('span', {}, version), ' · ' + formatDate(latestUpdate(p)))));
     }));
   }
   function showProject(p) {
     if (!dialog.open) returnFocus = document.activeElement;
-    const meta = [['Latest version', p.version || 'Source only'], ['Release date', formatDate(p.released)], ['GitHub stars', new Intl.NumberFormat('en').format(p.stars)]];
+    const meta = [['Latest version', p.displayVersion || p.version || 'Source only'], ['Release date', formatDate(p.released)], ['GitHub stars', new Intl.NumberFormat('en').format(p.stars)]];
     const details = node('dl', { class: 'dialog-meta' }, ...meta.map(([label, value]) => node('div', {}, node('dt', {}, label), node('dd', {}, value))));
     const note = node('aside', { class: `project-note${p.archived || p.experimental ? ' warning' : ''}` }, node('strong', {}, p.archived ? 'Archived project' : p.experimental ? 'Experimental build' : p.category === 'tools' ? 'Before you install' : 'What you need'), p.note);
     const actions = node('div', { class: 'dialog-actions' });

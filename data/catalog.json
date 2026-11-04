@@ -1556,6 +1556,7 @@
       "archived": false,
       "experimental": false,
       "directLink": true,
+      "displayVersion": "26.2.4",
       "upstream": null,
       "version": null,
       "released": null,
