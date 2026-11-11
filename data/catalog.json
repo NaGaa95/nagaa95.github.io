@@ -1166,7 +1166,7 @@
       "id": "SafeHouse",
       "title": "SafeHouse",
       "category": "native",
-      "description": "SafeHouse brings the Sly Cooper games to Nintendo Switch. My Switch port and HD texture improvements have been merged into the original project.",
+      "description": "SafeHouse brings the Sly Cooper games to Nintendo Switch.",
       "platform": "Native engine",
       "image": "assets/projects/SafeHouse.jpg",
       "repo": "https://github.com/FridiNaTor1/SafeHouse",
@@ -1190,9 +1190,7 @@
       "imageSource": "https://github.com/FridiNaTor1/SafeHouse/releases/download/v0.1.44/SafeHouse.nro",
       "downloads": 12582,
       "releaseUpdated": "2026-11-10T18:32:39Z",
-      "assetUpdated": "2026-11-10T18:32:38Z",
-      "upstreamed": true,
-      "contributionUrl": "https://github.com/FridiNaTor1/SafeHouse/pull/29"
+      "assetUpdated": "2026-11-10T18:32:38Z"
     },
     {
       "id": "skate3recomp-nx",

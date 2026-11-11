@@ -100,7 +100,6 @@
     const footer = node('div', { class: 'card-footer' }, node('span', {}, version), node('span', { class: 'card-stars', 'aria-label': `${p.stars} GitHub stars` }, icon('star'), new Intl.NumberFormat('en').format(p.stars)));
     const article = node('article', { class: 'project-card', 'data-project': p.id }, node('a', { href: p.directLink ? p.repo : `#project/${encodeURIComponent(p.id)}`, 'aria-label': `${p.title} — ${p.directLink ? 'official repository' : p.archived ? 'archived project' : p.experimental ? 'experimental project' : 'details and downloads'}` }, artwork(p, true), node('h4', { class: 'card-title' }, p.title), footer));
     if (p.continued) article.append(node('a', { class: 'continued-link', href: p.continued }, 'Continued by Chansey', icon('external')));
-    if (p.upstreamed) article.append(node('a', { class: 'continued-link', href: p.repo }, 'Contributed upstream', icon('external')));
     return article;
   }
   function renderGroups() {
@@ -157,10 +156,9 @@
     else if (!p.archived && p.releaseUrl) actions.append(node('a', { href: p.downloadUrl || p.releaseUrl, class: 'button primary' }, p.downloadUrl ? `Download ${p.assetName}` : 'View release', icon('download')));
     const guideUrl = p.category === 'native' || p.category === 'recompilations' ? p.releaseUrl || `${p.repo}#readme` : `${p.repo}#readme`;
     actions.append(node('a', { href: guideUrl, class: 'button secondary' }, 'Installation guide', icon('arrow')));
-    if (!p.hideSource) actions.append(node('a', { href: p.repo, class: 'button secondary' }, p.upstreamed ? 'Original repository' : 'Source code', icon('github')));
+    if (!p.hideSource) actions.append(node('a', { href: p.repo, class: 'button secondary' }, 'Source code', icon('github')));
     const credits = node('p', { class: 'dialog-credits' }, `Repository: ${p.repo.replace('https://github.com/', '')}. `);
     if (p.upstream) credits.append('Based on ', node('a', { href: `https://github.com/${p.upstream}` }, p.upstream), '. ');
-    if (p.contributionUrl) credits.append(node('a', { href: p.contributionUrl }, 'Nintendo Switch port contributed by NaGaa95 (merged upstream)'), '. ');
     credits.append('See the project for full credits and licensing.');
     const children = [node('div', { class: 'dialog-header' }, artwork(p), node('div', {}, node('p', { class: 'dialog-category' }, CATEGORIES[p.category].label), node('h2', { id: 'dialog-title' }, p.title))), node('p', { class: 'dialog-description' }, p.description), details, note, actions, credits];
     if (p.releaseNotes) children.push(node('details', { class: 'release-notes' }, node('summary', {}, 'Release notes'), node('pre', {}, p.releaseNotes)));
