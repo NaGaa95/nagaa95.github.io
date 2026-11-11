@@ -40,7 +40,7 @@ def refresh(project):
             if len(batch) < 100:
                 break
             page += 1
-        release = next((r for r in releases if not r['draft']), None)
+        release = max(releases, key=lambda r: r['published_at'] or r['created_at'], default=None)
         downloads = sum(asset['download_count'] for release in releases for asset in release['assets'])
         project.update(stars=repo['stargazers_count'], downloads=downloads, updated=repo['pushed_at'], archived=repo['archived'], branch=repo['default_branch'])
         if release:
