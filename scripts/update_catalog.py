@@ -9,6 +9,8 @@ import os
 from pathlib import Path
 import sys
 from datetime import datetime, timezone
+from urllib.error import HTTPError
+from urllib.parse import quote
 import urllib.request
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -41,6 +43,20 @@ def refresh(project):
                 break
             page += 1
         release = max(releases, key=lambda r: r['published_at'] or r['created_at'], default=None)
+        known_version = project.get('version')
+        known_date = project.get('released')
+        if known_version and known_date and (not release or known_date > (release['published_at'] or release['created_at'])):
+            # The release list can lag behind a published release's tag endpoint.
+            try:
+                known_release = github(f'repos/{repository}/releases/tags/{quote(known_version, safe="")}')
+            except HTTPError as error:
+                if error.code != 404:
+                    raise
+            else:
+                if not known_release['draft'] and known_release['published_at']:
+                    releases = [item for item in releases if item['tag_name'] != known_version]
+                    releases.append(known_release)
+                    release = max(releases, key=lambda r: r['published_at'] or r['created_at'])
         downloads = sum(asset['download_count'] for release in releases for asset in release['assets'])
         project.update(stars=repo['stargazers_count'], downloads=downloads, updated=repo['pushed_at'], archived=repo['archived'], branch=repo['default_branch'])
         if release:
