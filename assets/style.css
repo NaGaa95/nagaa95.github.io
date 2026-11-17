@@ -12,3 +12,51 @@
 @media(max-width:900px){.site-header{gap:16px}.recap{padding-left:16px;gap:13px}.metric strong{font-size:12px}.metric-label{font-size:11px}.header-links{gap:15px}}
 @media(max-width:680px){.site-header{grid-template-columns:1fr auto;min-height:0;padding-block:16px 14px;gap:12px 15px}.profile-title{grid-column:1;grid-row:1}.header-links{grid-column:2;grid-row:1}.recap{grid-column:1/-1;grid-row:2;border:0;padding:0;gap:20px}.metric strong{font-size:13px}.metric-label{font-size:12px}main.wrap{padding-top:24px}}
 @media(max-width:520px){.name{gap:8px}.name>img{width:32px;height:32px}.header-links{gap:11px}.header-links svg{width:18px;height:18px}.header-links .icon-button{width:30px;height:30px}.recap{gap:16px}.metric strong{font-size:12px}.metric-label{font-size:11px}}
+
+.console-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.console-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  min-height: 60px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.console-tab:hover {
+  background: var(--raised);
+  border-color: var(--faint);
+}
+.console-tab[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: var(--raised);
+  color: var(--accent);
+}
+.console-logo {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 42px;
+  height: 34px;
+  border-radius: 6px;
+  background: #e60012;
+}
+.console-logo img {
+  object-fit: contain;
+}
+@media (max-width: 520px) {
+  .console-tabs { gap: 6px; margin-bottom: 16px; }
+  .console-tab { width: 72px; min-height: 50px; padding: 5px; font-size: 12px; }
+  .console-logo { width: 32px; height: 28px; border-radius: 5px; }
+  .console-logo img { max-width: 26px; max-height: 17px; }
+}

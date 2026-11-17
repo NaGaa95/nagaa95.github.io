@@ -11,8 +11,11 @@
   };
   const $ = id => document.getElementById(id);
   const params = new URLSearchParams(location.search);
+  const consoleButtons = [...$('console-tabs').querySelectorAll('button')];
+  const initialConsole = params.get('console');
   const state = {
     category: CATEGORIES[params.get('category')] ? params.get('category') : 'all',
+    console: consoleButtons.some(button => button.dataset.console === initialConsole) ? initialConsole : 'all',
     query: params.get('q') || '',
     sort: ['popular', 'recent', 'az'].includes(params.get('sort')) ? params.get('sort') : 'popular',
   };
@@ -56,15 +59,19 @@
   };
   function syncUrl() {
     const url = new URL(location.href);
-    for (const key of ['category', 'q', 'sort', 'archived']) url.searchParams.delete(key);
+    for (const key of ['category', 'console', 'q', 'sort', 'archived']) url.searchParams.delete(key);
     if (state.category !== 'all') url.searchParams.set('category', state.category);
+    if (state.console !== 'all') url.searchParams.set('console', state.console);
     if (state.query) url.searchParams.set('q', state.query);
     if (state.sort !== 'popular') url.searchParams.set('sort', state.sort);
     history.replaceState(null, '', url);
   }
+  function matchesConsole(project) {
+    return state.console === 'all' || (project.consoles || ['switch-1']).includes(state.console);
+  }
   function filteredProjects() {
     const words = normalize(state.query.trim()).split(/\s+/).filter(Boolean);
-    return projects.filter(p => state.category === 'all' || state.category === p.category)
+    return projects.filter(p => matchesConsole(p) && (state.category === 'all' || state.category === p.category))
       .filter(p => words.every(w => normalize(`${p.title} ${p.id} ${p.platform} ${p.description} ${CATEGORIES[p.category].label}`).includes(w)))
       .sort(sorts[state.sort]);
   }
@@ -83,7 +90,7 @@
   }
   function categoryControls() {
     const buttons = Object.entries(CATEGORIES).map(([id, info]) => {
-      const count = projects.filter(p => id === 'all' || p.category === id).length;
+      const count = projects.filter(p => matchesConsole(p) && (id === 'all' || p.category === id)).length;
       const button = node('button', { type: 'button', class: 'category-tab', 'aria-pressed': String(state.category === id), 'data-category': id }, info.label, node('span', { class: 'tab-count', 'aria-hidden': 'true' }, count));
       button.addEventListener('click', () => {
         state.category = id;
@@ -127,9 +134,18 @@
     $('project-groups').replaceChildren(...groups);
     $('empty-state').hidden = visible.length !== 0;
     const suffix = state.query.trim() ? ` matching “${state.query.trim()}”` : state.category !== 'all' ? ` in ${CATEGORIES[state.category].label}` : ' in the collection';
-    $('result-count').textContent = `${visible.length} project${visible.length === 1 ? '' : 's'}${suffix}`;
+    const consoleLabel = consoleButtons.find(button => button.dataset.console === state.console).getAttribute('aria-label');
+    const consoleSuffix = state.console === 'all' ? '' : ` · ${consoleLabel}`;
+    $('result-count').textContent = `${visible.length} project${visible.length === 1 ? '' : 's'}${suffix}${consoleSuffix}`;
   }
-  function update() { categoryControls(); renderGroups(); syncUrl(); }
+  function update() {
+    for (const button of consoleButtons) {
+      button.setAttribute('aria-pressed', String(button.dataset.console === state.console));
+    }
+    categoryControls();
+    renderGroups();
+    syncUrl();
+  }
   function renderRecap() {
     const number = value => new Intl.NumberFormat('en').format(value);
     const metrics = [
@@ -148,14 +164,28 @@
   }
   function showProject(p) {
     if (!dialog.open) returnFocus = document.activeElement;
-    const meta = [['Latest version', p.displayVersion || p.version || 'Source only'], ['Release date', formatDate(p.released)], ['GitHub stars', new Intl.NumberFormat('en').format(p.stars)]];
+    const switch2BuildOnly = state.console === 'switch-2' && p.switch2BuildUrl;
+    const meta = [[switch2BuildOnly ? 'Latest upstream release' : 'Latest version', p.displayVersion || p.version || 'Source only'], ['Release date', formatDate(p.released)], ['GitHub stars', new Intl.NumberFormat('en').format(p.stars)]];
     const details = node('dl', { class: 'dialog-meta' }, ...meta.map(([label, value]) => node('div', {}, node('dt', {}, label), node('dd', {}, value))));
     const note = node('aside', { class: `project-note${p.archived || p.experimental ? ' warning' : ''}` }, node('strong', {}, p.archived ? 'Archived project' : p.experimental ? 'Experimental build' : p.category === 'tools' ? 'Before you install' : 'What you need'), p.note);
     const actions = node('div', { class: 'dialog-actions' });
-    if (p.continued) actions.append(node('a', { href: p.continued, class: 'button primary' }, 'View maintained project', icon('external')));
-    else if (!p.archived && p.releaseUrl) actions.append(node('a', { href: p.downloadUrl || p.releaseUrl, class: 'button primary' }, p.downloadUrl ? `Download ${p.assetName}` : 'View release', icon('download')));
+    const switch2Build = p.switch2BuildUrl && node('a', { href: p.switch2BuildUrl, class: `button ${switch2BuildOnly ? 'primary' : 'secondary'}` }, 'Switch 2 build instructions', icon('external'));
+    if (switch2BuildOnly) actions.append(switch2Build);
+    else if (p.continued) actions.append(node('a', { href: p.continued, class: 'button primary' }, 'View maintained project', icon('external')));
+    else if (!p.archived && p.releaseUrl) {
+      const switch2Selected = p.downloadAssetNames && state.console === 'switch-2';
+      const downloadUrl = switch2Selected ? p.switch2DownloadUrl : p.downloadUrl;
+      const downloadLabel = p.downloadAssetNames
+        ? `Download for ${switch2Selected ? 'Switch 2' : 'Switch 1'}`
+        : `Download ${p.assetName}`;
+      actions.append(node('a', { href: downloadUrl || p.releaseUrl, class: 'button primary' }, downloadUrl ? downloadLabel : 'View release', icon('download')));
+      if (state.console === 'all' && p.switch2DownloadUrl) {
+        actions.append(node('a', { href: p.switch2DownloadUrl, class: 'button secondary' }, 'Download for Switch 2', icon('download')));
+      }
+    }
     const guideUrl = p.category === 'native' || p.category === 'recompilations' ? p.releaseUrl || `${p.repo}#readme` : `${p.repo}#readme`;
-    actions.append(node('a', { href: guideUrl, class: 'button secondary' }, 'Installation guide', icon('arrow')));
+    if (!switch2BuildOnly) actions.append(node('a', { href: guideUrl, class: 'button secondary' }, 'Installation guide', icon('arrow')));
+    if (switch2Build && state.console === 'all') actions.append(switch2Build);
     if (!p.hideSource) actions.append(node('a', { href: p.repo, class: 'button secondary' }, 'Source code', icon('github')));
     const credits = node('p', { class: 'dialog-credits' }, `Repository: ${p.repo.replace('https://github.com/', '')}. `);
     if (p.upstream) credits.append('Based on ', node('a', { href: `https://github.com/${p.upstream}` }, p.upstream), '. ');
@@ -204,8 +234,22 @@
   $('sort').value = state.sort;
   $('search').addEventListener('input', e => { state.query = e.target.value; expanded.clear(); update(); });
   $('search').addEventListener('keydown', e => { if (e.key === 'Escape' && e.target.value) { e.target.value = ''; state.query = ''; update(); } });
+  for (const button of consoleButtons) {
+    button.addEventListener('click', () => {
+      state.console = button.dataset.console;
+      expanded.clear();
+      update();
+    });
+  }
   $('sort').addEventListener('change', e => { state.sort = e.target.value; update(); });
-  $('reset-filters').addEventListener('click', () => { Object.assign(state, { category: 'all', query: '', sort: 'popular' }); $('search').value = ''; $('sort').value = 'popular'; expanded.clear(); update(); $('search').focus(); });
+  $('reset-filters').addEventListener('click', () => {
+    Object.assign(state, { category: 'all', console: 'all', query: '', sort: 'popular' });
+    $('search').value = '';
+    $('sort').value = 'popular';
+    expanded.clear();
+    update();
+    $('search').focus();
+  });
   document.addEventListener('keydown', e => { if (e.key === '/' && !e.ctrlKey && !e.metaKey && !e.altKey && !dialog.open && !e.target.closest('input,textarea,select,[contenteditable]')) { e.preventDefault(); $('search').focus(); $('search').scrollIntoView({ block: 'center', behavior: matchMedia('(prefers-reduced-motion:reduce)').matches ? 'instant' : 'smooth' }); } });
 
   async function main() {

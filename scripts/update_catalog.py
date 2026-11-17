@@ -3,6 +3,7 @@
 Projects are deliberately allowlisted in data/catalog.json. This script never
 adds unrelated repositories or changes editorial categories and descriptions.
 """
+import base64
 import concurrent.futures
 import json
 import os
@@ -58,16 +59,31 @@ def refresh(project):
                     releases.append(known_release)
                     release = max(releases, key=lambda r: r['published_at'] or r['created_at'])
         downloads = sum(asset['download_count'] for release in releases for asset in release['assets'])
+        if version_file := project.get('versionFile'):
+            contents = github(f'repos/{repository}/contents/{quote(version_file)}')
+            version = base64.b64decode(contents['content']).decode('utf-8').strip()
+            if not version or any(char.isspace() for char in version):
+                raise ValueError(f'Expected one version in {version_file}')
+            project['displayVersion'] = version
         project.update(stars=repo['stargazers_count'], downloads=downloads, updated=repo['pushed_at'], archived=repo['archived'], branch=repo['default_branch'])
+        asset_names = project.get('downloadAssetNames')
+        switch2_asset = None
         if release:
             assets = release['assets']
-            asset = next((a for a in assets if a['name'].lower().endswith('.nro')), None) or (assets[0] if len(assets) == 1 else None)
+            if asset_names:
+                assets_by_name = {item['name']: item for item in assets}
+                asset = assets_by_name.get(asset_names.get('switch-1'))
+                switch2_asset = assets_by_name.get(asset_names.get('switch-2'))
+            else:
+                asset = next((a for a in assets if a['name'].lower().endswith('.nro')), None) or (assets[0] if len(assets) == 1 else None)
             project.update(version=release['tag_name'], released=release['published_at'], releaseUpdated=release.get('updated_at') or release['published_at'], assetUpdated=max((a.get('updated_at') or '' for a in assets), default='') or None, releaseUrl=release['html_url'], releaseNotes=release.get('body') or '', prerelease=release['prerelease'], downloadUrl=asset['browser_download_url'] if asset else None, assetName=asset['name'] if asset else None, assetSize=asset['size'] if asset else None)
         else:
             for field in ('version', 'released', 'releaseUpdated', 'assetUpdated', 'releaseUrl', 'downloadUrl', 'assetName', 'assetSize'):
                 project[field] = None
             project['releaseNotes'] = ''
             project['prerelease'] = False
+        if asset_names:
+            project['switch2DownloadUrl'] = switch2_asset['browser_download_url'] if switch2_asset else None
         if repo.get('parent'):
             project['upstream'] = repo['parent']['full_name']
         return project, None

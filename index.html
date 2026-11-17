@@ -42,6 +42,15 @@
     <section class="recent" aria-labelledby="recent-title"><h2 id="recent-title">Latest updates</h2><div class="recent-grid" id="recent-grid"><p class="loading">Loading updates…</p></div></section>
     <section class="library" id="library" aria-labelledby="library-title">
       <h2 id="library-title">Projects</h2>
+      <div class="console-tabs" id="console-tabs" role="group" aria-label="Console">
+        <button class="console-tab" type="button" data-console="all" aria-pressed="true">All</button>
+        <button class="console-tab" type="button" data-console="switch-1" aria-label="Switch 1" aria-pressed="false">
+          <span class="console-logo"><img src="assets/switch-1.svg" width="21" height="21" alt=""></span>
+        </button>
+        <button class="console-tab" type="button" data-console="switch-2" aria-label="Switch 2" aria-pressed="false">
+          <span class="console-logo"><img src="assets/switch-2.svg" width="35" height="19" alt=""></span>
+        </button>
+      </div>
       <div class="category-tabs" id="categories" role="group" aria-label="Project category"></div>
       <div class="library-controls"><label class="search"><svg><use href="#i-search"/></svg><span class="sr-only">Search projects</span><input id="search" type="search" placeholder="Search projects…" autocomplete="off" spellcheck="false"><kbd aria-hidden="true">/</kbd></label><label class="sort"><span class="sr-only">Sort projects</span><select id="sort"><option value="popular">Most starred</option><option value="recent">Recently updated</option><option value="az">Name: A–Z</option></select></label></div>
       <div class="results-meta"><p id="result-count" role="status" aria-live="polite">Loading projects…</p></div>
