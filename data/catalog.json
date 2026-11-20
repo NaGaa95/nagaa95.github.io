@@ -26,7 +26,7 @@
       "releaseNotes": "## abc_nx 1.0.1\n\n- Added support for SaltyNX FPS / Resolution reading\n- Removed the built-in FPS counter in favor of SaltyNX.\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 132,
+      "downloads": 133,
       "releaseUpdated": "2026-11-03T20:35:00Z",
       "assetUpdated": "2026-11-03T20:32:09Z"
     },
@@ -54,7 +54,7 @@
       "releaseNotes": "## acpc_nx 1.0.2\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 402,
+      "downloads": 404,
       "releaseUpdated": "2026-11-03T20:34:22Z",
       "assetUpdated": "2026-11-03T20:29:08Z"
     },
@@ -82,7 +82,7 @@
       "releaseNotes": "## angrybirds2_nx 1.0.3\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n- Fixed crash in Docked mode",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 673,
+      "downloads": 680,
       "releaseUpdated": "2026-11-03T21:16:45Z",
       "assetUpdated": "2026-11-03T21:16:43Z"
     },
@@ -110,7 +110,7 @@
       "releaseNotes": "## angrybirdsjourney_nx 1.0.1\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 138,
+      "downloads": 140,
       "releaseUpdated": "2026-11-03T20:34:32Z",
       "assetUpdated": "2026-11-03T20:31:29Z"
     },
@@ -138,7 +138,7 @@
       "releaseNotes": "## aom_nx 1.0.4\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 367,
+      "downloads": 370,
       "releaseUpdated": "2026-11-03T20:34:45Z",
       "assetUpdated": "2026-11-03T20:31:43Z"
     },
@@ -152,7 +152,7 @@
       "repo": "https://github.com/NaGaa95/Cemu-nx",
       "branch": "main",
       "stars": 237,
-      "updated": "2026-11-12T04:43:18Z",
+      "updated": "2026-11-20T14:50:06Z",
       "archived": false,
       "experimental": false,
       "upstream": "cemu-project/Cemu",
@@ -168,7 +168,7 @@
       "continued": null,
       "imageFit": "cover",
       "imageSource": "https://raw.githubusercontent.com/NaGaa95/Cemu-nx/main/switch_launcher/Cemu.jpg",
-      "downloads": 17919,
+      "downloads": 17861,
       "releaseUpdated": "2026-11-12T04:43:18Z",
       "assetUpdated": "2026-11-12T04:42:10Z"
     },
@@ -196,7 +196,7 @@
       "releaseNotes": "## coi_nx 1.0.2\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n- Added the `xbox_layout` config option to swap A/B and X/Y.\r\n- Removed the built-in FPS counter in favor of SaltyNX.\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 477,
+      "downloads": 482,
       "releaseUpdated": "2026-11-03T20:34:55Z",
       "assetUpdated": "2026-11-03T20:31:58Z"
     },
@@ -224,7 +224,7 @@
       "releaseNotes": "## cr3_nx 1.0.2\n\n- Added support for SaltyNX FPS / Resolution reading\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 127,
+      "downloads": 128,
       "releaseUpdated": "2026-11-03T20:35:29Z",
       "assetUpdated": "2026-11-03T20:33:21Z"
     },
@@ -252,7 +252,7 @@
       "releaseNotes": "## css_nx 1.0.2\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n- Removed the built-in FPS counter in favor of SaltyNX.\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 828,
+      "downloads": 831,
       "releaseUpdated": "2026-11-03T20:34:24Z",
       "assetUpdated": "2026-11-03T20:29:16Z"
     },
@@ -280,7 +280,7 @@
       "releaseNotes": "## ctr2_nx 1.0.2\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 183,
+      "downloads": 186,
       "releaseUpdated": "2026-11-03T20:34:04Z",
       "assetUpdated": "2026-11-03T20:27:17Z"
     },
@@ -308,7 +308,7 @@
       "releaseNotes": "## ctr_nx 1.0.3\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 294,
+      "downloads": 299,
       "releaseUpdated": "2026-11-03T20:34:07Z",
       "assetUpdated": "2026-11-03T20:27:21Z"
     },
@@ -336,7 +336,7 @@
       "releaseNotes": "## ct_nx 1.1.2\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 1397,
+      "downloads": 1409,
       "releaseUpdated": "2026-11-03T20:34:12Z",
       "assetUpdated": "2026-11-03T20:28:52Z"
     },
@@ -366,7 +366,7 @@
       "continued": null,
       "imageFit": "cover",
       "imageSource": "https://raw.githubusercontent.com/NaGaa95/dolphin-nx/master/Data/Switch/dolphin_icon.jpg",
-      "downloads": 21917,
+      "downloads": 22059,
       "releaseUpdated": "2026-11-12T21:35:13Z",
       "assetUpdated": "2026-11-12T21:30:47Z"
     },
@@ -394,7 +394,7 @@
       "releaseNotes": "## DrasticDS_nx 1.2.1\r\n\r\n- Added SaltyNX FPS and resolution support.",
       "note": "Compatibility and performance vary by game. Read the project’s instructions before installing.",
       "continued": null,
-      "downloads": 14394,
+      "downloads": 14473,
       "releaseUpdated": "2026-11-02T17:23:43Z",
       "assetUpdated": "2026-11-02T17:23:40Z"
     },
@@ -422,7 +422,7 @@
       "releaseNotes": "## ff3_3d_nx 1.0.1\n\n- Added support for SaltyNX FPS / Resolution reading\n- Fixed X/Y controls: X opens the menu and Y interacts with party members.\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 265,
+      "downloads": 266,
       "releaseUpdated": "2026-11-03T20:35:32Z",
       "assetUpdated": "2026-11-03T20:33:28Z"
     },
@@ -450,7 +450,7 @@
       "releaseNotes": "## ff4tay_nx 1.0.2\n\n- Added support for SaltyNX FPS / Resolution reading\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 192,
+      "downloads": 193,
       "releaseUpdated": "2026-11-03T20:35:35Z",
       "assetUpdated": "2026-11-03T20:33:35Z"
     },
@@ -478,7 +478,7 @@
       "releaseNotes": "## ff4_3d_nx 1.0.4\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 378,
+      "downloads": 383,
       "releaseUpdated": "2026-11-03T20:34:01Z",
       "assetUpdated": "2026-11-03T20:27:11Z"
     },
@@ -506,7 +506,7 @@
       "releaseNotes": "## ffd2_nx 1.0.2\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 106,
+      "downloads": 108,
       "releaseUpdated": "2026-11-03T20:34:52Z",
       "assetUpdated": "2026-11-03T20:31:55Z"
     },
@@ -534,7 +534,7 @@
       "releaseNotes": "## ffd_nx 1.0.1\n\n- Added support for SaltyNX FPS / Resolution reading\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 216,
+      "downloads": 218,
       "releaseUpdated": "2026-11-03T20:35:27Z",
       "assetUpdated": "2026-11-03T20:33:14Z"
     },
@@ -592,7 +592,7 @@
       "releaseNotes": "## gdash_nx 1.0.4\n\n- Added support for SaltyNX FPS / Resolution reading\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 1773,
+      "downloads": 1783,
       "releaseUpdated": "2026-11-03T20:33:52Z",
       "assetUpdated": "2026-11-03T20:28:05Z"
     },
@@ -633,7 +633,7 @@
       "image": "assets/projects/gtactw_nx.jpg",
       "repo": "https://github.com/NaGaa95/gtactw_nx",
       "branch": "main",
-      "stars": 34,
+      "stars": 35,
       "updated": "2026-11-04T18:37:30Z",
       "archived": false,
       "experimental": false,
@@ -648,7 +648,7 @@
       "releaseNotes": "## gtactw_nx 1.0.2\n\n- Added support for SaltyNX FPS / Resolution reading\n- Removed the built-in FPS counter in favor of SaltyNX.\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 755,
+      "downloads": 762,
       "releaseUpdated": "2026-11-03T20:35:22Z",
       "assetUpdated": "2026-11-03T20:33:01Z"
     },
@@ -676,7 +676,7 @@
       "releaseNotes": "## gtalcs_nx 1.0.4\n\n- Added support for SaltyNX FPS / Resolution reading\n- Removed the built-in FPS counter in favor of SaltyNX.\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 694,
+      "downloads": 701,
       "releaseUpdated": "2026-11-03T20:35:11Z",
       "assetUpdated": "2026-11-03T20:32:35Z"
     },
@@ -704,7 +704,7 @@
       "releaseNotes": "## gtasa_nx 1.0.5\r\n\r\n- Update to Mesa 26.2.4 SDK.\r\n- Added support for SaltyNX FPS / Resolution reading.\r\n- Removed the built-in FPS counter in favor of SaltyNX.\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 2203,
+      "downloads": 2233,
       "releaseUpdated": "2026-11-03T22:41:57Z",
       "assetUpdated": "2026-11-03T20:25:27Z"
     },
@@ -732,7 +732,7 @@
       "releaseNotes": "## hl2_nx 1.0.5\r\n\r\n- Fixed brightness adjustment and gamma rendering.\r\n- Fixed default controller mapping.\r\n- Optimized archive reads & added a 64 MiB cache to improve loading times.\r\n- Added support for SaltyNX FPS / Resolution reading.\r\n- Removed the built-in FPS counter in favor of SaltyNX.\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 2206,
+      "downloads": 2215,
       "releaseUpdated": "2026-11-04T02:38:18Z",
       "assetUpdated": "2026-11-04T02:38:13Z"
     },
@@ -760,7 +760,7 @@
       "releaseNotes": "## jetpackjoyride_nx 1.0.2\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 418,
+      "downloads": 420,
       "releaseUpdated": "2026-11-03T20:34:09Z",
       "assetUpdated": "2026-11-03T20:28:43Z"
     },
@@ -788,7 +788,7 @@
       "releaseNotes": "## KHUx_nx 1.0.2\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 257,
+      "downloads": 258,
       "releaseUpdated": "2026-11-03T20:34:37Z",
       "assetUpdated": "2026-11-03T20:29:48Z"
     },
@@ -801,7 +801,7 @@
       "image": "assets/projects/layton2_nx.jpg",
       "repo": "https://github.com/NaGaa95/layton2_nx",
       "branch": "main",
-      "stars": 15,
+      "stars": 16,
       "updated": "2026-11-04T18:37:32Z",
       "archived": false,
       "experimental": false,
@@ -816,7 +816,7 @@
       "releaseNotes": "## layton2_nx 1.0.3\n\n- Added support for SaltyNX FPS / Resolution reading\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 148,
+      "downloads": 149,
       "releaseUpdated": "2026-11-03T20:35:16Z",
       "assetUpdated": "2026-11-03T20:32:48Z"
     },
@@ -829,7 +829,7 @@
       "image": "assets/projects/layton3_nx.jpg",
       "repo": "https://github.com/NaGaa95/layton3_nx",
       "branch": "main",
-      "stars": 14,
+      "stars": 15,
       "updated": "2026-11-04T18:37:35Z",
       "archived": false,
       "experimental": false,
@@ -844,7 +844,7 @@
       "releaseNotes": "## layton3_nx 1.0.4\n\n- Added support for SaltyNX FPS / Resolution reading\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 154,
+      "downloads": 155,
       "releaseUpdated": "2026-11-03T20:35:14Z",
       "assetUpdated": "2026-11-03T20:32:41Z"
     },
@@ -872,7 +872,7 @@
       "releaseNotes": "## laytonbmr_nx 1.0.2\r\n\r\n- Added touchscreen multitouch for two-finger room movement.\r\n- Added ZR + left stick gestures in handheld and docked mode.\r\n\r\nThanks to [sukalibur9](https://github.com/sukalibur9)",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 101,
+      "downloads": 102,
       "releaseUpdated": "2026-11-04T18:47:18Z",
       "assetUpdated": "2026-11-04T18:46:53Z"
     },
@@ -885,7 +885,7 @@
       "image": "assets/projects/layton_nx.jpg",
       "repo": "https://github.com/NaGaa95/layton_nx",
       "branch": "main",
-      "stars": 13,
+      "stars": 14,
       "updated": "2026-11-04T18:37:34Z",
       "archived": false,
       "experimental": false,
@@ -900,7 +900,7 @@
       "releaseNotes": "## layton_nx 1.0.5\r\n\r\n- Added support for the Japanese APK.\r\n- Added support for SaltyNX FPS / Resolution reading.\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 257,
+      "downloads": 260,
       "releaseUpdated": "2026-11-03T23:47:44Z",
       "assetUpdated": "2026-11-03T23:46:52Z"
     },
@@ -928,7 +928,7 @@
       "releaseNotes": "## lbbg_nx 1.0.1\n\n- Added support for SaltyNX FPS / Resolution reading\n- Removed the built-in FPS counter in favor of SaltyNX.\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 209,
+      "downloads": 210,
       "releaseUpdated": "2026-11-03T20:35:06Z",
       "assetUpdated": "2026-11-03T20:32:21Z"
     },
@@ -956,7 +956,7 @@
       "releaseNotes": "## lnsor_nx 1.0.2\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n- Removed the built-in FPS counter in favor of SaltyNX.\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 185,
+      "downloads": 186,
       "releaseUpdated": "2026-11-03T20:34:50Z",
       "assetUpdated": "2026-11-03T20:31:50Z"
     },
@@ -984,7 +984,7 @@
       "releaseNotes": "## lswtcs_nx 1.0.4\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n- Removed the built-in FPS counter in favor of SaltyNX.\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 784,
+      "downloads": 789,
       "releaseUpdated": "2026-11-03T20:34:19Z",
       "assetUpdated": "2026-11-03T20:25:31Z"
     },
@@ -1012,7 +1012,7 @@
       "releaseNotes": "## lswtfa_nx 1.0.2\r\n\r\n- Fixed incorrect controller mapping.\r\n- Unlocked the full game and all content.\r\n- Added support for SaltyNX FPS / Resolution reading\r\n- Removed the built-in FPS counter in favor of SaltyNX.\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 119,
+      "downloads": 120,
       "releaseUpdated": "2026-11-03T22:53:22Z",
       "assetUpdated": "2026-11-03T22:51:50Z"
     },
@@ -1025,7 +1025,7 @@
       "image": "assets/projects/MarathonRecomp-NX.webp",
       "repo": "https://github.com/NaGaa95/MarathonRecomp-NX",
       "branch": "main",
-      "stars": 30,
+      "stars": 29,
       "updated": "2026-07-31T05:01:28Z",
       "archived": true,
       "experimental": false,
@@ -1070,7 +1070,7 @@
       "releaseNotes": "## max_nx_v2.1.131 1.0.2\n\n- Added support for SaltyNX FPS / Resolution reading\n- Removed the built-in FPS counter in favor of SaltyNX.\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 368,
+      "downloads": 371,
       "releaseUpdated": "2026-11-03T20:35:38Z",
       "assetUpdated": "2026-11-03T20:30:58Z"
     },
@@ -1098,7 +1098,7 @@
       "releaseNotes": "# NetherSX2_nx 1.4.1\r\n\r\n- Added SaltyNX FPS and resolution support.\r\n- Network adapter fixes.",
       "note": "Compatibility and performance vary by game. Read the project’s instructions before installing.",
       "continued": null,
-      "downloads": 40035,
+      "downloads": 40167,
       "releaseUpdated": "2026-11-02T22:32:50Z",
       "assetUpdated": "2026-11-02T22:28:34Z"
     },
@@ -1119,8 +1119,8 @@
         "switch-2"
       ],
       "note": "Requires your own PC copy of Black Ops and the files for any DLC you want to play. Use the web installer linked in the installation guide to prepare your game files for Switch.",
-      "stars": 37,
-      "downloads": 903,
+      "stars": 40,
+      "downloads": 1007,
       "updated": "2026-11-19T18:25:22Z",
       "archived": false,
       "branch": "main",
@@ -1166,7 +1166,7 @@
       "continued": null,
       "imageFit": "contain",
       "imageSource": "https://raw.githubusercontent.com/NaGaa95/openmohaa_nx/main/misc/openmohaa.png",
-      "downloads": 426,
+      "downloads": 427,
       "releaseUpdated": "2026-11-03T20:35:24Z",
       "assetUpdated": "2026-11-03T20:33:08Z"
     },
@@ -1179,26 +1179,35 @@
       "image": "assets/projects/ppsspp-nx.jpg",
       "repo": "https://github.com/NaGaa95/ppsspp-nx",
       "branch": "master",
-      "stars": 51,
-      "updated": "2026-11-12T04:44:49Z",
+      "stars": 53,
+      "updated": "2026-11-20T19:07:25Z",
       "archived": false,
       "experimental": false,
       "upstream": "hrydgard/ppsspp",
-      "version": "1.1.1",
-      "released": "2026-11-12T04:25:31Z",
-      "releaseUrl": "https://github.com/NaGaa95/ppsspp-nx/releases/tag/1.1.1",
-      "downloadUrl": "https://github.com/NaGaa95/ppsspp-nx/releases/download/1.1.1/PPSSPP.nro",
+      "version": "1.1.2",
+      "released": "2026-11-20T18:23:20Z",
+      "releaseUrl": "https://github.com/NaGaa95/ppsspp-nx/releases/tag/1.1.2",
+      "downloadUrl": "https://github.com/NaGaa95/ppsspp-nx/releases/download/1.1.2/PPSSPP.nro",
       "assetName": "PPSSPP.nro",
-      "assetSize": 75043110,
+      "assetSize": 75296246,
       "prerelease": false,
-      "releaseNotes": "## PPSSPP-nx 1.1.1\r\n\r\n- Merged the latest [PPSSPP](https://github.com/hrydgard/ppsspp) updates.\r\n- Updated to Mesa 26.2.7.\r\n- Fixed Deko3D allocation crash.\r\n- Added game preview music when highlighting a title. can be turned off under Settings → Launcher → Game preview music.\r\n- Fixed the updater. Replace `/switch/ppsspp-nx/PPSSPP.nro` manually once, future updates will work from this version.\r\n",
+      "releaseNotes": "## PPSSPP-nx 1.1.2\r\n\r\n- Added Nintendo Switch 2 support.\r\n  - Drako3D / NVK / OpenGL / Zink\r\n  - Added 120 Hz frame generation.\r\n  - Added Joy-Con mouse support.\r\n- Merged the latest [PPSSPP](https://github.com/hrydgard/ppsspp) updates.\r\n- Improved Deko3D stability / rendering.\r\n- Improved Audio.\r\n- Fixed ad hoc relay server.\r\n- Added Full flow resolution for frame generation.\r\n- Fixed the updater replacing the NRO while it was still open.",
       "note": "Compatibility and performance vary by game. Read the project’s instructions before installing.",
       "continued": null,
       "imageFit": "cover",
       "imageSource": "https://raw.githubusercontent.com/NaGaa95/ppsspp-nx/master/icons/PPSSPP-icon.jpg",
-      "downloads": 4506,
-      "releaseUpdated": "2026-11-12T04:58:49Z",
-      "assetUpdated": "2026-11-12T04:56:14Z"
+      "downloads": 4612,
+      "releaseUpdated": "2026-11-20T19:07:41Z",
+      "assetUpdated": "2026-11-20T19:07:41Z",
+      "consoles": [
+        "switch-1",
+        "switch-2"
+      ],
+      "downloadAssetNames": {
+        "switch-1": "PPSSPP.nro",
+        "switch-2": "PPSSPP-NX2.nro"
+      },
+      "switch2DownloadUrl": "https://github.com/NaGaa95/ppsspp-nx/releases/download/1.1.2/PPSSPP-NX2.nro"
     },
     {
       "id": "SafeHouse",
@@ -1209,26 +1218,26 @@
       "image": "assets/projects/SafeHouse.jpg",
       "repo": "https://github.com/FridiNaTor1/SafeHouse",
       "branch": "main",
-      "stars": 182,
-      "updated": "2026-11-19T20:09:29Z",
+      "stars": 184,
+      "updated": "2026-11-20T00:37:27Z",
       "archived": false,
       "experimental": false,
       "upstream": null,
-      "version": "v0.2.139",
-      "released": "2026-11-19T20:09:29Z",
-      "releaseUrl": "https://github.com/FridiNaTor1/SafeHouse/releases/tag/v0.2.139",
-      "downloadUrl": "https://github.com/FridiNaTor1/SafeHouse/releases/download/v0.2.139/SafeHouse.nro",
+      "version": "v0.2.142",
+      "released": "2026-11-20T00:37:28Z",
+      "releaseUrl": "https://github.com/FridiNaTor1/SafeHouse/releases/tag/v0.2.142",
+      "downloadUrl": "https://github.com/FridiNaTor1/SafeHouse/releases/download/v0.2.142/SafeHouse.nro",
       "assetName": "SafeHouse.nro",
-      "assetSize": 51409951,
+      "assetSize": 51495967,
       "prerelease": false,
-      "releaseNotes": "SafeHouse 0.2.139, built 2026-11-19 from c52fc258.\n\n## Changes\n\n- Fix empty binocucom portraits on AMD (Windows) and some Android phones\n\n## Downloads\n\n| For | File |\n|---|---|\n| Windows, installer | `SafeHouse-Launcher-Windows-x86_64-Setup.exe` |\n| Windows, portable (unzip and open `SafeHouse.exe`) | `SafeHouse-Launcher-Windows-x86_64-Portable.zip` |\n| Windows on ARM, installer | `SafeHouse-Launcher-Windows-arm64-Setup.exe` |\n| Windows on ARM, portable | `SafeHouse-Launcher-Windows-arm64-Portable.zip` |\n| Linux and Steam Deck, AppImage | `SafeHouse-Launcher-Linux-x86_64.AppImage` |\n| Linux, archive | `SafeHouse-Launcher-Linux-x86_64.tar.gz` |\n| Linux on ARM (Steam Frame), AppImage | `SafeHouse-Launcher-Linux-aarch64.AppImage` |\n| Linux on ARM, archive | `SafeHouse-Launcher-Linux-aarch64.tar.gz` |\n| macOS, Apple silicon | `SafeHouse-Launcher-macOS-arm64.dmg` |\n| macOS, Intel | `SafeHouse-Launcher-macOS-x86_64.dmg` |\n| Nintendo Switch (homebrew, copy to `sdmc:/switch/SafeHouse/`) | `SafeHouse.nro` |\n| Nintendo Switch 2 (kaiHEN homebrew, copy to `sdmc:/switch/SafeHouse/`) | `SafeHouse-NX2.nro` |\n| Android and Meta Quest (preview) | `SafeHouse-Android-arm64-v8a.apk` |\n| iPhone and iPad (sideload with AltStore, SideStore or Sideloadly; in testing) | `SafeHouse-iOS.ipa` |\n\nThe launcher updates itself (Settings > Launcher > Check for updates). SHA-256 checksums are in `SHA256SUMS`.\nOn macOS, open the app with right-click > Open the first time. The packages contain no game data.\n",
+      "releaseNotes": "SafeHouse 0.2.142, built 2026-11-20 from 835ac8bd.\n\n## Changes\n\n- Movies: no read past the buffer; no freeze on a stopped sound clock; damaged installs say so; no \"Not Responding\" ghost on Windows\n- Fix empty binocucom portraits on AMD; logs that survive crashes; crash and hang reports\n\n## Downloads\n\n| For | File |\n|---|---|\n| Windows, installer | `SafeHouse-Launcher-Windows-x86_64-Setup.exe` |\n| Windows, portable (unzip and open `SafeHouse.exe`) | `SafeHouse-Launcher-Windows-x86_64-Portable.zip` |\n| Windows on ARM, installer | `SafeHouse-Launcher-Windows-arm64-Setup.exe` |\n| Windows on ARM, portable | `SafeHouse-Launcher-Windows-arm64-Portable.zip` |\n| Linux and Steam Deck, AppImage | `SafeHouse-Launcher-Linux-x86_64.AppImage` |\n| Linux, archive | `SafeHouse-Launcher-Linux-x86_64.tar.gz` |\n| Linux on ARM (Steam Frame), AppImage | `SafeHouse-Launcher-Linux-aarch64.AppImage` |\n| Linux on ARM, archive | `SafeHouse-Launcher-Linux-aarch64.tar.gz` |\n| macOS, Apple silicon | `SafeHouse-Launcher-macOS-arm64.dmg` |\n| macOS, Intel | `SafeHouse-Launcher-macOS-x86_64.dmg` |\n| Nintendo Switch (homebrew, copy to `sdmc:/switch/SafeHouse/`) | `SafeHouse.nro` |\n| Nintendo Switch 2 (kaiHEN homebrew, copy to `sdmc:/switch/SafeHouse/`) | `SafeHouse-NX2.nro` |\n| Android and Meta Quest (preview) | `SafeHouse-Android-arm64-v8a.apk` |\n| iPhone and iPad (sideload with AltStore, SideStore or Sideloadly; in testing) | `SafeHouse-iOS.ipa` |\n\nThe launcher updates itself (Settings > Launcher > Check for updates). SHA-256 checksums are in `SHA256SUMS`.\nOn macOS, open the app with right-click > Open the first time. The packages contain no game data.\n",
       "note": "Copy the build for your console to sdmc:/switch/SafeHouse/ and install each game from your own PS2 .iso or .chd disc image. Sly 1 and Sly 2 are playable; Sly 3 is still in development and currently returns to the launcher after its opening movies. No game data is included.",
       "continued": null,
       "imageFit": "cover",
       "imageSource": "https://github.com/FridiNaTor1/SafeHouse/releases/download/v0.1.44/SafeHouse.nro",
-      "downloads": 31737,
-      "releaseUpdated": "2026-11-19T20:09:29Z",
-      "assetUpdated": "2026-11-19T20:09:28Z",
+      "downloads": 34657,
+      "releaseUpdated": "2026-11-20T00:37:28Z",
+      "assetUpdated": "2026-11-20T00:37:27Z",
       "consoles": [
         "switch-1",
         "switch-2"
@@ -1237,7 +1246,7 @@
         "switch-1": "SafeHouse.nro",
         "switch-2": "SafeHouse-NX2.nro"
       },
-      "switch2DownloadUrl": "https://github.com/FridiNaTor1/SafeHouse/releases/download/v0.2.139/SafeHouse-NX2.nro"
+      "switch2DownloadUrl": "https://github.com/FridiNaTor1/SafeHouse/releases/download/v0.2.142/SafeHouse-NX2.nro"
     },
     {
       "id": "skate3recomp-nx",
@@ -1293,7 +1302,7 @@
       "releaseNotes": "## sotn_nx 1.0.3\n\n- Added support for SaltyNX FPS / Resolution reading\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 1214,
+      "downloads": 1221,
       "releaseUpdated": "2026-11-03T20:35:03Z",
       "assetUpdated": "2026-11-03T20:32:14Z"
     },
@@ -1306,8 +1315,8 @@
       "image": "assets/projects/sphaira.jpg",
       "repo": "https://github.com/NaGaa95/sphaira",
       "branch": "master",
-      "stars": 980,
-      "updated": "2026-11-19T00:10:56Z",
+      "stars": 988,
+      "updated": "2026-11-20T02:25:22Z",
       "archived": false,
       "experimental": false,
       "upstream": null,
@@ -1323,7 +1332,7 @@
       "continued": null,
       "imageFit": "cover",
       "imageSource": "https://raw.githubusercontent.com/NaGaa95/sphaira/master/assets/icon.jpg",
-      "downloads": 423643,
+      "downloads": 428031,
       "releaseUpdated": "2026-11-19T00:10:43Z",
       "assetUpdated": "2026-11-19T00:09:11Z",
       "consoles": [
@@ -1355,7 +1364,7 @@
       "releaseNotes": "## subwaysurfers_nx 1.0.4\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 924,
+      "downloads": 928,
       "releaseUpdated": "2026-11-03T20:34:42Z",
       "assetUpdated": "2026-11-03T20:31:39Z"
     },
@@ -1383,7 +1392,7 @@
       "releaseNotes": "## swordigo_nx 1.0.2\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 132,
+      "downloads": 133,
       "releaseUpdated": "2026-11-03T20:34:58Z",
       "assetUpdated": "2026-11-03T20:32:01Z"
     },
@@ -1411,7 +1420,7 @@
       "releaseNotes": "",
       "note": "Read the project’s instructions and compatibility notes before installing.",
       "continued": null,
-      "downloads": 135,
+      "downloads": 137,
       "hideSource": true,
       "releaseUpdated": "2026-06-04T23:09:48Z",
       "assetUpdated": "2026-06-04T22:58:24Z"
@@ -1440,7 +1449,7 @@
       "releaseNotes": "## tf2_nx 1.0.2\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 355,
+      "downloads": 358,
       "releaseUpdated": "2026-11-03T20:34:27Z",
       "assetUpdated": "2026-11-03T20:29:22Z"
     },
@@ -1468,7 +1477,7 @@
       "releaseNotes": "USE : https://github.com/ChanseyIsTheBest/UnleashedRecomp-NX",
       "note": "This repository is archived. The release notes direct users to the maintained project by ChanseyIsTheBest.",
       "continued": "https://github.com/ChanseyIsTheBest/UnleashedRecomp-NX",
-      "downloads": 928,
+      "downloads": 933,
       "releaseUpdated": "2026-10-01T14:44:30Z",
       "assetUpdated": "2026-07-30T13:26:00Z"
     },
@@ -1498,7 +1507,7 @@
       "continued": null,
       "imageFit": "contain",
       "imageSource": "https://raw.githubusercontent.com/NaGaa95/vcmi_nx/develop/clientapp/icons/vcmiclient.256x256.png",
-      "downloads": 293,
+      "downloads": 296,
       "releaseUpdated": "2026-07-06T07:24:15Z",
       "assetUpdated": "2026-07-06T07:22:47Z"
     },
@@ -1528,7 +1537,7 @@
       "continued": null,
       "imageFit": "cover",
       "imageSource": "https://raw.githubusercontent.com/NaGaa95/Vita3K-nx/master/switch-launcher/icon.jpg",
-      "downloads": 25345,
+      "downloads": 25765,
       "releaseUpdated": "2026-11-19T20:35:15Z",
       "assetUpdated": "2026-11-19T20:32:17Z",
       "consoles": [
@@ -1565,7 +1574,7 @@
       "releaseNotes": "## vln_nx 1.0.3\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 133,
+      "downloads": 134,
       "releaseUpdated": "2026-11-03T20:34:35Z",
       "assetUpdated": "2026-11-03T20:31:32Z"
     },
@@ -1580,7 +1589,7 @@
       "imageSource": "https://raw.githubusercontent.com/autorunhq/autorun/main/horizon-wine/assets/icon.jpg",
       "repo": "https://github.com/autorunhq/autorun",
       "branch": "main",
-      "stars": 564,
+      "stars": 568,
       "updated": "2026-10-16T18:18:50Z",
       "archived": false,
       "experimental": true,
@@ -1595,7 +1604,7 @@
       "releaseNotes": "**Install:** delete old autorun installation, unzip `autorun-test-build-4.zip` to the **root of your SD card** — everything goes into `switch/wine`. \r\n\r\n**What changed, how to upgrade from test-build-3 and known issues:** see the release thread on the forum:\r\n[https://forum.ticoverse.com/topic/101/autorun-test-build-4](https://forum.ticoverse.com/topic/101/autorun-test-build-4)\r\n\r\nUpgrading from test-build-3? Your Windows user folder is now `C:\\users\\steamuser` (was `C:\\users\\wine`): move saves and settings from `switch/wine/drive_c/users/wine` to `switch/wine/drive_c/users/steamuser`. The forum post has the details.\r\n\r\nGame reports and help: [Game Discussion](https://forum.ticoverse.com/category/21/game-discussion) · [Help & Suggestions](https://forum.ticoverse.com/category/23/help-suggestions)\r\n\r\n### Antivirus false positives\r\n\r\nSome of the DLLs in this package are heavily patched Wine builds, modified so Wine can run on the Switch's OS at all. This can trip antivirus and scanner heuristics. That's a false positive caused by the patching, not malicious code — the source is in this repository if you want to check it or build it yourself.\r\n",
       "note": "Experimental test build. Bring your own Windows game files and check the project’s installation and compatibility notes.",
       "continued": null,
-      "downloads": 27427,
+      "downloads": 27550,
       "releaseUpdated": "2026-09-24T10:59:45Z",
       "assetUpdated": "2026-09-24T10:59:43Z"
     },
