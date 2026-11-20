@@ -138,7 +138,7 @@
       "releaseNotes": "## aom_nx 1.0.4\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 370,
+      "downloads": 371,
       "releaseUpdated": "2026-11-03T20:34:45Z",
       "assetUpdated": "2026-11-03T20:31:43Z"
     },
@@ -152,25 +152,34 @@
       "repo": "https://github.com/NaGaa95/Cemu-nx",
       "branch": "main",
       "stars": 237,
-      "updated": "2026-11-20T14:50:06Z",
+      "updated": "2026-11-20T21:15:24Z",
       "archived": false,
       "experimental": false,
       "upstream": "cemu-project/Cemu",
-      "version": "1.3.2",
-      "released": "2026-11-12T04:43:18Z",
-      "releaseUrl": "https://github.com/NaGaa95/Cemu-nx/releases/tag/1.3.2",
-      "downloadUrl": "https://github.com/NaGaa95/Cemu-nx/releases/download/1.3.2/cemu.nro",
+      "version": "1.3.3",
+      "released": "2026-11-20T21:15:25Z",
+      "releaseUrl": "https://github.com/NaGaa95/Cemu-nx/releases/tag/1.3.3",
+      "downloadUrl": "https://github.com/NaGaa95/Cemu-nx/releases/download/1.3.3/cemu.nro",
       "assetName": "cemu.nro",
-      "assetSize": 143340642,
+      "assetSize": 134558818,
       "prerelease": false,
-      "releaseNotes": "## Cemu-nx 1.3.2\r\n\r\n- Merged latest Cemu updates.\r\n- Updated to Mesa 26.2.7.\r\n- Fixed Wii Remote MotionPlus calibration.\r\n- Added a gyro-controlled Wii Remote pointer with a remappable recenter button.\r\n- Added an in-game quick menu option to change the controller type for additional players.",
+      "releaseNotes": "## Cemu-nx 1.3.3\r\n\r\n- Added Nintendo Switch 2 support.\r\n  - Drako3D / NVK / OpenGL / Zink\r\n  - Added Drako3D shader packs, downloadable from the launcher.\r\n  - Added 120 Hz frame generation.\r\n  - Added Joy-Con mouse support, in the launcher and on the GamePad screen.\r\n- Deko3D / Drako3D is now the default renderer.\r\n- Merged the latest [Cemu](https://github.com/cemu-project/Cemu) updates.\r\n- Added Full flow resolution for frame generation.\r\n- Fixed crashes with 3D textures on Deko3D.\r\n- Fixed the software keyboard not opening with Deko3D.\r\n- Improved Deko3D frame generation stability.\r\n- Fixed DSU motion input disconnecting.",
       "note": "Compatibility and performance vary by game. Read the project’s instructions before installing.",
       "continued": null,
       "imageFit": "cover",
       "imageSource": "https://raw.githubusercontent.com/NaGaa95/Cemu-nx/main/switch_launcher/Cemu.jpg",
-      "downloads": 17861,
-      "releaseUpdated": "2026-11-12T04:43:18Z",
-      "assetUpdated": "2026-11-12T04:42:10Z"
+      "downloads": 17871,
+      "releaseUpdated": "2026-11-20T21:15:25Z",
+      "assetUpdated": "2026-11-20T21:13:19Z",
+      "consoles": [
+        "switch-1",
+        "switch-2"
+      ],
+      "downloadAssetNames": {
+        "switch-1": "cemu.nro",
+        "switch-2": "cemu-nx2.nro"
+      },
+      "switch2DownloadUrl": "https://github.com/NaGaa95/Cemu-nx/releases/download/1.3.3/cemu-nx2.nro"
     },
     {
       "id": "coi_nx",
@@ -366,7 +375,7 @@
       "continued": null,
       "imageFit": "cover",
       "imageSource": "https://raw.githubusercontent.com/NaGaa95/dolphin-nx/master/Data/Switch/dolphin_icon.jpg",
-      "downloads": 22059,
+      "downloads": 22070,
       "releaseUpdated": "2026-11-12T21:35:13Z",
       "assetUpdated": "2026-11-12T21:30:47Z"
     },
@@ -394,7 +403,7 @@
       "releaseNotes": "## DrasticDS_nx 1.2.1\r\n\r\n- Added SaltyNX FPS and resolution support.",
       "note": "Compatibility and performance vary by game. Read the project’s instructions before installing.",
       "continued": null,
-      "downloads": 14473,
+      "downloads": 14478,
       "releaseUpdated": "2026-11-02T17:23:43Z",
       "assetUpdated": "2026-11-02T17:23:40Z"
     },
@@ -676,7 +685,7 @@
       "releaseNotes": "## gtalcs_nx 1.0.4\n\n- Added support for SaltyNX FPS / Resolution reading\n- Removed the built-in FPS counter in favor of SaltyNX.\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 701,
+      "downloads": 702,
       "releaseUpdated": "2026-11-03T20:35:11Z",
       "assetUpdated": "2026-11-03T20:32:35Z"
     },
@@ -704,7 +713,7 @@
       "releaseNotes": "## gtasa_nx 1.0.5\r\n\r\n- Update to Mesa 26.2.4 SDK.\r\n- Added support for SaltyNX FPS / Resolution reading.\r\n- Removed the built-in FPS counter in favor of SaltyNX.\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 2233,
+      "downloads": 2240,
       "releaseUpdated": "2026-11-03T22:41:57Z",
       "assetUpdated": "2026-11-03T20:25:27Z"
     },
@@ -900,7 +909,7 @@
       "releaseNotes": "## layton_nx 1.0.5\r\n\r\n- Added support for the Japanese APK.\r\n- Added support for SaltyNX FPS / Resolution reading.\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 260,
+      "downloads": 261,
       "releaseUpdated": "2026-11-03T23:47:44Z",
       "assetUpdated": "2026-11-03T23:46:52Z"
     },
@@ -1070,7 +1079,7 @@
       "releaseNotes": "## max_nx_v2.1.131 1.0.2\n\n- Added support for SaltyNX FPS / Resolution reading\n- Removed the built-in FPS counter in favor of SaltyNX.\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 371,
+      "downloads": 372,
       "releaseUpdated": "2026-11-03T20:35:38Z",
       "assetUpdated": "2026-11-03T20:30:58Z"
     },
@@ -1098,7 +1107,7 @@
       "releaseNotes": "# NetherSX2_nx 1.4.1\r\n\r\n- Added SaltyNX FPS and resolution support.\r\n- Network adapter fixes.",
       "note": "Compatibility and performance vary by game. Read the project’s instructions before installing.",
       "continued": null,
-      "downloads": 40167,
+      "downloads": 40184,
       "releaseUpdated": "2026-11-02T22:32:50Z",
       "assetUpdated": "2026-11-02T22:28:34Z"
     },
@@ -1119,8 +1128,8 @@
         "switch-2"
       ],
       "note": "Requires your own PC copy of Black Ops and the files for any DLC you want to play. Use the web installer linked in the installation guide to prepare your game files for Switch.",
-      "stars": 40,
-      "downloads": 1007,
+      "stars": 41,
+      "downloads": 1016,
       "updated": "2026-11-19T18:25:22Z",
       "archived": false,
       "branch": "main",
@@ -1196,7 +1205,7 @@
       "continued": null,
       "imageFit": "cover",
       "imageSource": "https://raw.githubusercontent.com/NaGaa95/ppsspp-nx/master/icons/PPSSPP-icon.jpg",
-      "downloads": 4612,
+      "downloads": 4642,
       "releaseUpdated": "2026-11-20T19:07:41Z",
       "assetUpdated": "2026-11-20T19:07:41Z",
       "consoles": [
@@ -1235,7 +1244,7 @@
       "continued": null,
       "imageFit": "cover",
       "imageSource": "https://github.com/FridiNaTor1/SafeHouse/releases/download/v0.1.44/SafeHouse.nro",
-      "downloads": 34657,
+      "downloads": 34859,
       "releaseUpdated": "2026-11-20T00:37:28Z",
       "assetUpdated": "2026-11-20T00:37:27Z",
       "consoles": [
@@ -1332,7 +1341,7 @@
       "continued": null,
       "imageFit": "cover",
       "imageSource": "https://raw.githubusercontent.com/NaGaa95/sphaira/master/assets/icon.jpg",
-      "downloads": 428031,
+      "downloads": 428435,
       "releaseUpdated": "2026-11-19T00:10:43Z",
       "assetUpdated": "2026-11-19T00:09:11Z",
       "consoles": [
@@ -1364,7 +1373,7 @@
       "releaseNotes": "## subwaysurfers_nx 1.0.4\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 928,
+      "downloads": 929,
       "releaseUpdated": "2026-11-03T20:34:42Z",
       "assetUpdated": "2026-11-03T20:31:39Z"
     },
@@ -1392,7 +1401,7 @@
       "releaseNotes": "## swordigo_nx 1.0.2\r\n\r\n- Added support for SaltyNX FPS / Resolution reading\r\n",
       "note": "Requires files from your own legally obtained copy. Follow the project’s guide for the exact version and setup.",
       "continued": null,
-      "downloads": 133,
+      "downloads": 134,
       "releaseUpdated": "2026-11-03T20:34:58Z",
       "assetUpdated": "2026-11-03T20:32:01Z"
     },
@@ -1537,7 +1546,7 @@
       "continued": null,
       "imageFit": "cover",
       "imageSource": "https://raw.githubusercontent.com/NaGaa95/Vita3K-nx/master/switch-launcher/icon.jpg",
-      "downloads": 25765,
+      "downloads": 25799,
       "releaseUpdated": "2026-11-19T20:35:15Z",
       "assetUpdated": "2026-11-19T20:32:17Z",
       "consoles": [
@@ -1604,7 +1613,7 @@
       "releaseNotes": "**Install:** delete old autorun installation, unzip `autorun-test-build-4.zip` to the **root of your SD card** — everything goes into `switch/wine`. \r\n\r\n**What changed, how to upgrade from test-build-3 and known issues:** see the release thread on the forum:\r\n[https://forum.ticoverse.com/topic/101/autorun-test-build-4](https://forum.ticoverse.com/topic/101/autorun-test-build-4)\r\n\r\nUpgrading from test-build-3? Your Windows user folder is now `C:\\users\\steamuser` (was `C:\\users\\wine`): move saves and settings from `switch/wine/drive_c/users/wine` to `switch/wine/drive_c/users/steamuser`. The forum post has the details.\r\n\r\nGame reports and help: [Game Discussion](https://forum.ticoverse.com/category/21/game-discussion) · [Help & Suggestions](https://forum.ticoverse.com/category/23/help-suggestions)\r\n\r\n### Antivirus false positives\r\n\r\nSome of the DLLs in this package are heavily patched Wine builds, modified so Wine can run on the Switch's OS at all. This can trip antivirus and scanner heuristics. That's a false positive caused by the patching, not malicious code — the source is in this repository if you want to check it or build it yourself.\r\n",
       "note": "Experimental test build. Bring your own Windows game files and check the project’s installation and compatibility notes.",
       "continued": null,
-      "downloads": 27550,
+      "downloads": 27555,
       "releaseUpdated": "2026-09-24T10:59:45Z",
       "assetUpdated": "2026-09-24T10:59:43Z"
     },
